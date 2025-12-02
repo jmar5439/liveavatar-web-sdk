@@ -6,6 +6,7 @@ interface CreditTier {
   monthlyPrice: string;
   description: string;
   highlighted?: boolean;
+  priceId?: string;
 }
 
 const tiers: CreditTier[] = [
@@ -14,6 +15,7 @@ const tiers: CreditTier[] = [
     creditsPerMinute: 2,
     monthlyPrice: "€70 / 500 credits",
     description: "Start experimenting with our avatars",
+    priceId: "price_1SZtVILyWXqEYh6XeK3HJ7Ay",
   },
   {
     name: "Pro",
@@ -21,6 +23,7 @@ const tiers: CreditTier[] = [
     monthlyPrice: "€120 / 1000 credits",
     description: "Ideal for professionals and regular users",
     highlighted: true,
+    priceId: "price_1SZtVZLyWXqEYh6Xs9XKjxpM",
   },
   {
     name: "Enterprise",
@@ -31,12 +34,12 @@ const tiers: CreditTier[] = [
 ];
 
 export default function CreditsPricing() {
-  const handleCheckout = async (tierName: string) => {
+  const handleCheckout = async (tier: CreditTier) => {
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tierName }),
+        body: JSON.stringify({ priceId: tier.priceId }),
       });
       const data = await res.json();
       if (data.url) {
@@ -67,7 +70,7 @@ export default function CreditsPricing() {
             </p>
           </div>
           <button
-            onClick={() => handleCheckout(tier.name)}
+            onClick={() => handleCheckout(tier)}
             className={`mt-6 py-2 rounded font-semibold ${
               tier.highlighted
                 ? "bg-white text-indigo-600 hover:bg-gray-200"
