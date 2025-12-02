@@ -30,7 +30,6 @@
     "heroku-postbuild": "pnpm install --recursive && cd apps/demo && pnpm run build"
   },
   "dependencies": {
-    "@heygen/liveavatar-web-sdk": "file:../../packages/js-sdk",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-only-warn": "^1.1.0",
