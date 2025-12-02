@@ -7,7 +7,7 @@ export async function POST() {
     const res = await fetch(`${API_URL}/v1/sessions/token`, {
       method: "POST",
       headers: {
-        "X-API-KEY": API_KEY,
+        "X-API-KEY": API_KEY ?? "",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
