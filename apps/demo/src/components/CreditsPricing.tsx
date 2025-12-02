@@ -1,4 +1,3 @@
-// app/components/CreditsPricing.tsx
 "use client";
 
 interface CreditTier {
@@ -32,6 +31,22 @@ const tiers: CreditTier[] = [
 ];
 
 export default function CreditsPricing() {
+  const handleCheckout = async (tierName: string) => {
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ tierName }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url; // redirect to Stripe Checkout
+      }
+    } catch (error) {
+      console.error("Stripe checkout error:", error);
+    }
+  };
+
   return (
     <div className="grid md:grid-cols-3 gap-6 mt-4">
       {tiers.map((tier) => (
@@ -52,6 +67,7 @@ export default function CreditsPricing() {
             </p>
           </div>
           <button
+            onClick={() => handleCheckout(tier.name)}
             className={`mt-6 py-2 rounded font-semibold ${
               tier.highlighted
                 ? "bg-white text-indigo-600 hover:bg-gray-200"

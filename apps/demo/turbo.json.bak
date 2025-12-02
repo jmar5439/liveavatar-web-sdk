@@ -12,7 +12,8 @@
         "NEXT_PUBLIC_CONTEXT_ID",
         "NEXT_PUBLIC_LANGUAGE",
         "NEXT_PUBLIC_ELEVENLABS_API_KEY",
-        "NEXT_PUBLIC_OPENAI_API_KEY"
+        "NEXT_PUBLIC_OPENAI_API_KEY",
+        "NEXT_STRIPE_SECRET_KEY",
       ]
     },
     "build": {
@@ -25,7 +26,8 @@
         "NEXT_PUBLIC_CONTEXT_ID",
         "NEXT_PUBLIC_LANGUAGE",
         "NEXT_PUBLIC_ELEVENLABS_API_KEY",
-        "NEXT_PUBLIC_OPENAI_API_KEY"
+        "NEXT_PUBLIC_OPENAI_API_KEY",
+        "NEXT_STRIPE_SECRET_KEY"
       ]
     }
   }
