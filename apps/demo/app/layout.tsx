@@ -2,6 +2,7 @@
 "use client";
 import { useState, ReactNode } from "react";
 import "./globals.css";
+import CreditsPricing from "../src/components/CreditsPricing";
 
 export default function RootLayout({
   children,
@@ -52,11 +53,7 @@ export default function RootLayout({
             <div>
               <h1 className="text-2xl font-bold mb-4">Pricing</h1>
               <p>Here is the pricing information for our avatar services.</p>
-              <ul className="list-disc ml-6 mt-2">
-                <li>Basic: Free - Limited features</li>
-                <li>Pro: $10/month - Full access</li>
-                <li>Enterprise: Custom pricing</li>
-              </ul>
+              <CreditsPricing />
             </div>
           )}
 
