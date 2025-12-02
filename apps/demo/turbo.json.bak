@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["./turbo-base.json"],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "env": [
+        "NEXT_PUBLIC_API_KEY",
+        "NEXT_PUBLIC_API_URL",
+        "NEXT_PUBLIC_AVATAR_ID",
+        "NEXT_PUBLIC_VOICE_ID",
+        "NEXT_PUBLIC_CONTEXT_ID",
+        "NEXT_PUBLIC_LANGUAGE",
+        "NEXT_PUBLIC_ELEVENLABS_API_KEY",
+        "NEXT_PUBLIC_OPENAI_API_KEY"
+      ]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "env": [
+        "NEXT_PUBLIC_API_KEY",
+        "NEXT_PUBLIC_API_URL",
+        "NEXT_PUBLIC_AVATAR_ID",
+        "NEXT_PUBLIC_VOICE_ID",
+        "NEXT_PUBLIC_CONTEXT_ID",
+        "NEXT_PUBLIC_LANGUAGE",
+        "NEXT_PUBLIC_ELEVENLABS_API_KEY",
+        "NEXT_PUBLIC_OPENAI_API_KEY"
+      ]
+    }
+  }
+}
