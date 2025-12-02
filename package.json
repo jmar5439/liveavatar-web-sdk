@@ -26,7 +26,8 @@
     "prettier:check": "prettier --check \"**/*.{ts,tsx,md}\"",
     "typecheck": "turbo run typecheck",
     "prepare": "husky",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "heroku-postbuild": "cd apps/demo && pnpm install && pnpm run build"
   },
   "dependencies": {
     "eslint": "^9.31.0",
