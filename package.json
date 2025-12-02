@@ -27,7 +27,7 @@
     "typecheck": "turbo run typecheck",
     "prepare": "husky",
     "test": "turbo run test",
-    "heroku-postbuild": "pnpm install --recursive && cd apps/demo && pnpm run build"
+    "heroku-postbuild": "pnpm install --frozen-lockfile && pnpm run build"
   },
   "dependencies": {
     "eslint": "^9.31.0",
