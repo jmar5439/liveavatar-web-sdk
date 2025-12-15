@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ["files2.heygen.ai"], // agrega aquí todos los hostnames de imágenes externas que uses
   },
+  transpilePackages: ["@heygen/liveavatar-web-sdk"],
 };
 
 export default nextConfig;
