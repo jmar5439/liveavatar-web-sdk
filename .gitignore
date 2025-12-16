@@ -40,3 +40,4 @@ yarn-error.log*
 *.pem
 repo_files.md
 traverse_markdown.py
+verdel.md
