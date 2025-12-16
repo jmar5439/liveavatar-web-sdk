@@ -6,7 +6,7 @@
       "use": "@vercel/next"
     }
   ],
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --frozen-lockfile && pnpm run build",
   "outputDirectory": "apps/demo/.next",
   "rewrites": [
     {
