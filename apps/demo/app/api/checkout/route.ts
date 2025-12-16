@@ -3,11 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { STRIPE_SECRET_KEY } from "../secrets"; // tu clave secreta
 
-const stripe = new Stripe(STRIPE_SECRET_KEY, {
-  apiVersion: "2025-11-17.clover", // última versión soportada
-});
-
 export async function POST(req: NextRequest) {
+  const stripe = new Stripe(STRIPE_SECRET_KEY, {
+    apiVersion: "2025-11-17.clover", // última versión soportada
+  });
+
   const { priceId } = await req.json();
 
   if (!priceId) {
