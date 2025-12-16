@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "projects": [
+    {
+      "src": "apps/demo",
+      "use": "@vercel/next",
+      "buildCommand": "pnpm install && pnpm turbo run build --filter=apps/demo",
+      "outputDirectory": "apps/demo/.next"
+    }
+  ],
+  "installCommand": "pnpm install"
+}
