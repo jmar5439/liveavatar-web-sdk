@@ -6,6 +6,6 @@
       "use": "@vercel/next"
     }
   ],
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --frozen-lockfile --filter ./...",
   "outputDirectory": "apps/demo/.next"
 }
