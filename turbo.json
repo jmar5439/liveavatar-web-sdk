@@ -8,6 +8,7 @@
       "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "env": [
         "CLERK_SECRET_KEY",
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_API_KEY",
         "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
@@ -18,6 +19,7 @@
       "dependsOn": ["^lint"],
       "env": [
         "CLERK_SECRET_KEY",
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_API_KEY",
         "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
@@ -32,6 +34,7 @@
       "persistent": true,
       "env": [
         "CLERK_SECRET_KEY",
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_API_KEY",
         "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
