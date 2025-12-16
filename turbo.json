@@ -9,7 +9,7 @@
       "env": [
         "CLERK_SECRET_KEY",
         "NEXT_PUBLIC_API_KEY",
-        "NEXT_STRIPE_SECRET_KEY",
+        "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_APP_URL"
       ]
@@ -19,7 +19,7 @@
       "env": [
         "CLERK_SECRET_KEY",
         "NEXT_PUBLIC_API_KEY",
-        "NEXT_STRIPE_SECRET_KEY",
+        "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_APP_URL"
       ]
@@ -33,7 +33,7 @@
       "env": [
         "CLERK_SECRET_KEY",
         "NEXT_PUBLIC_API_KEY",
-        "NEXT_STRIPE_SECRET_KEY",
+        "STRIPE_SECRET_KEY",
         "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_APP_URL"
       ]
