@@ -6,11 +6,5 @@
       "use": "@vercel/next"
     }
   ],
-  "installCommand": "pnpm install",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  "installCommand": "pnpm install"
 }
