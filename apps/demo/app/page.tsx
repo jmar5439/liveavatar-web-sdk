@@ -13,6 +13,7 @@ import {
   Globe,
   MessageSquare,
 } from "lucide-react";
+import { AvatarSlider } from "../src/components/AvatarSlider";
 
 export default function Home() {
   const router = useRouter();
@@ -84,6 +85,7 @@ export default function Home() {
               </button>
             </SignedIn>
           </div>
+          <AvatarSlider />
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12 border-t border-zinc-800 mt-12">
