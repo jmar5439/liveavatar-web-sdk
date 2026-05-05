@@ -18,3 +18,27 @@ Try out our demos locally to see how it works and start off your own projects wi
 
 - LiveAvatar Website: [https://liveavatar.com](https://liveavatar.com)
 - API Documentation: [https://docs.liveavatar.com](https://docs.liveavatar.com)
+
+# Liveavatar NextJS Demo
+
+This is a quick demo to demonstrate the various capabilities of the LiveAvatar Web SDK.
+
+## Installation
+
+This demo was built with NextJS, TailwindCSS and pnpm.
+
+To start up the demo, run the following commands on your terminal within the base directory:
+
+```bash
+pnpm install
+pnpm build
+pnpm run demo
+```
+
+You can also run navigate to the `apps/demo` directory and run the following commands:
+
+```bash
+pnpm install
+pnpm build
+pnpm run dev
+```
